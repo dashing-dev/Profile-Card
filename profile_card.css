@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #334e64;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(rgb(89, 127, 197),rgb(95, 150, 85));
+}
+.profile-container {
+    margin-top: 140px;
+    margin-bottom: 50px;
+    position: relative;
+    background-color: #fff;
+    width: 350px;
+    padding: 100px 50px 40;
+    border-radius: 12px;
+    box-shadow      : 0 0 60px 5px rgba(0, 0, 0, 0.2);
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+}
+.img-container{
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border: 5px solid #ee1;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img-container img {
+   width: 100%;
+   max-width: 100%;
+   transform: scale(1.1);
+}
+.info{
+    margin-top: 10px;
+}
+.info i {
+    margin: 8px;
+    font-size: 1.1em;
+}
+.place {
+    margin-bottom: 12px;
+}
+.full-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:rgb(89, 127, 197);
+}
+.social-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 9px;
+    margin-bottom: 18px ;
+}
+.social-container i {
+    color: #fff;
+
+}
+.social-container button {
+    border:none ;
+    background-color: red;
+    outline: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 7px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+.social-container button:hover {
+    transform: scale(1.1);
+}
+.social-container button.youtube {
+    background: linear-gradient(45deg, #ff000088, #ff0000);
+}
+
+.social-container button.instagram {
+    background: linear-gradient(45deg, #e6683ccc 25%, #dc2743 50%,
+            #bc1888 100%);
+}
+
+.social-container button.github {
+    background: linear-gradient(45deg, #33333388, #333333);
+}
+.action {
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #d31258;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 20px;
+    width: 80%;
+    margin-top: 20px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.action.message {
+    background-color: #6741ff;
+}
+
+.action:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
+}
+.intro {
+     font-size: 15px;
+}
